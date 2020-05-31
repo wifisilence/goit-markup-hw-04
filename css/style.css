@@ -131,6 +131,11 @@ p {
 }
 
 /*контакты в шапке*/
+.item-icon-mail {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+}
 .site-contact {
   display: flex;
   margin-left: auto;
@@ -150,9 +155,14 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .site-contact .link:hover,
 .site-contact .link:focus {
   color: var(--accent-color);
+}
+.site-contact .item:hover,
+.site-contact .item:focus {
+  fill: var(--accent-color);
 }
 
 /*Герой*/
@@ -172,7 +182,7 @@ p {
   background-position: center;
 }
 .hero {
-  background-color: var(--hero-bcg-color);
+  /*background-color: var(--hero-bcg-color);*/
   text-align: center;
 }
 .hero {
@@ -180,16 +190,21 @@ p {
   padding-bottom: 0px;
 }
 .hero-title {
-  margin-bottom: 46px;
+  padding-top: 200px;
+  padding-bottom: 30px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero .btn {
+  padding: 10px 32px 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-bottom: 200px;
   border: 1px solid var(--accent-color);
-  border-radius: 5px;
   color: var(--secondary-text-color);
   background: var(--white-color);
   font-family: inherit;

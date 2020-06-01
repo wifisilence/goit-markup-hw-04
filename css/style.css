@@ -50,7 +50,7 @@ p {
 
 /*общий для секций*/
 .section-title {
-  /*color: #212121;*/
+  color: #212121;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -136,6 +136,11 @@ p {
   height: 11.2px;
   margin-right: 10px;
 }
+.item-icon-hone {
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+}
 .site-contact {
   display: flex;
   margin-left: auto;
@@ -219,6 +224,38 @@ p {
 }
 
 /*преимущества*/
+.pic-antenna {
+  height: 70px;
+  width: 65.32px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.pic-clock {
+  height: 70px;
+  width: 66.96px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.pic-diagram {
+  height: 53.69px;
+  width: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.pic-astronavt {
+  height: 70px;
+  width: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.pic-block {
+  height: 120px;
+  width: 270px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .advan {
   border-bottom: 1px solid #ececec;
 }
@@ -238,6 +275,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: left;
+  margin-bottom: 10px;
 }
 .advantages-list {
   align-items: center;
@@ -290,6 +328,7 @@ p {
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
+  color: #212121;
 }
 .comand {
   display: flex;
@@ -300,6 +339,8 @@ p {
   align-items: flex-end;
   margin-right: 30px;
   background-color: var(--white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .comand .item h3 {
@@ -321,59 +362,107 @@ p {
   margin-bottom: 16px;
 }
 .comand .pict {
+  display: flex;
+  color: #afb1b8;
+  border-radius: 50%;
+}
+.comand .pict:hover,
+.comand .pict:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.icon-insta {
+  fill: currentColor;
+  display: block;
+}
+
+.contact-person {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-bottom: 24px;
+}
+
+.contact-person .pict {
   align-items: center;
-  background-color: var(--primary-bcg-color);
-  margin-right: 10px;
-  height: 44px;
   width: 44px;
-  border: 1px solid var(--white-color);
-  border-radius: 20px;
+  height: 44px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
-.comand .pict img {
+
+/*.comand .pict img {
   margin: 12px;
-}
+}*/
+/*.icon-insta {
+  padding: 12 12 12 12;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}*/
+/*.icon-insta:hover,
+.icon-insta:focus {
+  fill: #ffffff;
+}*/
 
 .comand .pict:last-child {
   margin-right: 0px;
 }
 
-.contact-person {
+/*.contact-person {
   display: flex;
   align-items: flex-start;
   width: 207px;
   height: 44px;
   margin-left: 32px;
   margin-bottom: 24px;
-}
+}*/
 
-.comand .pict:hover,
+/*.comand .pict:hover,
 .comand .pict:focus {
   background-color: var(--accent-color);
   height: 44px;
   width: 44px;
   border: 1px solid var(--accent-color);
   border-radius: 20px;
-}
+}*/
 
 .pers-foto {
   margin-bottom: 30px;
 }
 /*Клиены*/
-.clients .clients-logo {
+
+.logo-client-block:hover,
+.logo-client-block:focus {
+  color: var(--accent-color);
+}
+
+.logo-client-block {
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+.clients-logo {
   display: flex;
   list-style: none;
   margin-right: 0px;
   padding: 0px;
 }
-.clients-logo img {
-  height: 90px;
-  width: 170px;
+.client-logo {
+  fill: currentColor;
 }
 
 .clients-logo li {
   margin-right: 30px;
   display: block;
 }
+
 .clients-logo li:last-child {
   margin-right: 0px;
 }
@@ -400,9 +489,36 @@ footer {
 
 .adress .contact {
   color: var(--adress-text-color);
+  text-decoration: none;
 }
 
 /*Соц сети*/
+.icon-foot {
+  fill: currentColor;
+  display: block;
+}
+
+.pict-foot .pict {
+  color: var(--white-color);
+}
+
+.cosial-pict {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.cosial-pict:hover,
+.cosial-pict:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
 
 .doit {
   display: flex;
@@ -424,21 +540,8 @@ footer {
   margin-bottom: 21px;
 }
 
-.pict-foot .pict img {
-  margin-right: 10px;
-}
-
-.pict-foot .pict:last-child {
+.cosial-pict:last-child {
   margin-right: 0px;
-}
-
-.doit .pict {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.doit .pict:hover,
-.doit .pict:focus {
-  background-color: var(--accent-color);
 }
 
 /*Форма Подписки*/
@@ -500,10 +603,11 @@ footer {
   letter-spacing: 0.06em;
 }
 .card {
-  margin-right: 26px;
+  margin-right: 23px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
-  border-radius: 5px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .example .sub-title {
   font-size: 18px;
@@ -551,10 +655,7 @@ footer {
 }
 
 .filter .btn {
-  border: 1px solid var(--accent-color);
-  border-radius: 5px;
   color: var(--secondary-text-color);
-  background: var(--white-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -563,6 +664,8 @@ footer {
   padding-right: 22px;
   margin-right: 8px;
   align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 .filt {
   padding-top: 94px;
